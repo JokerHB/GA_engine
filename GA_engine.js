@@ -48,7 +48,7 @@ window.onload = function(){
         targetData = targetImageData.data;
     // Update existing image src on your page
     }
-    image.src = "/static/image/" + picSelection.value + ".png";
+    image.src = "./" + picSelection.value + ".png";
     config.triangleNum = 80;
     config.point_max_mutate_rate = 0.0008;
     config.point_max_rate_mutate_range_down = 0;
@@ -130,7 +130,7 @@ function changeSelect(val){
         targetImageData = targetCtx.getImageData(0, 0, 256, 256);
         targetData = targetImageData.data;
     }
-    image.src = "/static/image/" + picSelection.value + ".png";
+    image.src = "./" + picSelection.value + ".png";
     console.log(targetData);
 }
 

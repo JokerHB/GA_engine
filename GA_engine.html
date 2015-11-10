@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
     <style type="text/css">
         input{
             margin: 10px;
@@ -22,6 +23,7 @@
     <button onclick="start()">start!</button>
     <button onclick="stop()">stop!</button>
     <button onclick="pause()">pause!</button>
+
 </div>
 
 
@@ -49,8 +51,7 @@
     三角形透明度:<input id="color_alpha"  style="width:60px;" value="0.35" /><br/>
     <button onclick="setIt()">setIt!</button>
 </div>
-<script src="{{ url_for('static', filename='js/GA_engine.js') }}"></script>
-
+    <script type="text/javascript" src="GA_engine.js"></script>
 
 </body>
 </html>
